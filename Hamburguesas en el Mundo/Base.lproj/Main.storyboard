@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas_en_el_Mundo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,110 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La hamburguesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb8-lb-fVV">
+                                <rect key="frame" x="157" y="54" width="286" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="lNA-Tu-6Wk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lNA-Tu-6Wk"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y la podrás encontrar en:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rE-hq-I4a">
+                                <rect key="frame" x="157" y="181" width="286" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="Hut-k7-nkx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hut-k7-nkx"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquí aparecera la ciudad." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-JQ-INf">
+                                <rect key="frame" x="157" y="255" width="286" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="mfT-Lx-ZNL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mfT-Lx-ZNL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYx-FU-dQu">
+                                <rect key="frame" x="157" y="336" width="286" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="JHi-z0-UH4"/>
+                                </constraints>
+                                <state key="normal" title="¡Quiero una hamburguesa!"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JHi-z0-UH4"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dameUnaHmaburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGx-uz-mcH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquí aparecerá la hamburguesa." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHb-aO-lL2">
+                                <rect key="frame" x="157" y="120" width="286" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="pSe-1C-r1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cb8-lb-fVV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="1GG-NL-qG8"/>
+                            <constraint firstItem="0rE-hq-I4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5YU-XN-LJE"/>
+                            <constraint firstItem="oHb-aO-lL2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="160" id="7oE-Wm-whD"/>
+                            <constraint firstItem="0rE-hq-I4a" firstAttribute="width" secondItem="oHb-aO-lL2" secondAttribute="width" id="FCr-bh-21K"/>
+                            <constraint firstItem="9bx-JQ-INf" firstAttribute="top" secondItem="0rE-hq-I4a" secondAttribute="bottom" constant="53" id="GPt-Oz-SS0"/>
+                            <constraint firstItem="oHb-aO-lL2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LlC-0m-P2w"/>
+                            <constraint firstItem="0rE-hq-I4a" firstAttribute="top" secondItem="oHb-aO-lL2" secondAttribute="bottom" constant="40" id="OPw-Hl-3l4"/>
+                            <constraint firstItem="oHb-aO-lL2" firstAttribute="top" secondItem="cb8-lb-fVV" secondAttribute="bottom" constant="45" id="P32-Q2-1MV"/>
+                            <constraint firstItem="hYx-FU-dQu" firstAttribute="width" secondItem="oHb-aO-lL2" secondAttribute="width" id="Tnl-F2-ZcO"/>
+                            <constraint firstItem="cb8-lb-fVV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="WVM-RX-Pdd"/>
+                            <constraint firstItem="9bx-JQ-INf" firstAttribute="width" secondItem="oHb-aO-lL2" secondAttribute="width" id="aff-JJ-4Ci"/>
+                            <constraint firstItem="cb8-lb-fVV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="179" id="bZR-3j-cg1"/>
+                            <constraint firstItem="hYx-FU-dQu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lJa-ao-ALl"/>
+                            <constraint firstItem="hYx-FU-dQu" firstAttribute="top" secondItem="9bx-JQ-INf" secondAttribute="bottom" constant="60" id="nZg-lu-IpZ"/>
+                            <constraint firstItem="9bx-JQ-INf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="po2-wI-LOv"/>
+                            <constraint firstItem="cb8-lb-fVV" firstAttribute="width" secondItem="oHb-aO-lL2" secondAttribute="width" id="sSS-a6-Bz3"/>
+                            <constraint firstItem="cb8-lb-fVV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zbf-0Y-MPH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WVM-RX-Pdd"/>
+                                <exclude reference="bZR-3j-cg1"/>
+                                <exclude reference="7oE-Wm-whD"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nombreDeCiudad" destination="9bx-JQ-INf" id="ZN3-PE-lks"/>
+                        <outlet property="nombreDeHamburguesa" destination="oHb-aO-lL2" id="ubo-AC-knN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="349"/>
         </scene>
     </scenes>
 </document>

@@ -12,6 +12,7 @@
 		FD7D65B21D3AF5FD00E7882E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7D65B01D3AF5FD00E7882E /* Main.storyboard */; };
 		FD7D65B41D3AF5FD00E7882E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7D65B31D3AF5FD00E7882E /* Assets.xcassets */; };
 		FD7D65B71D3AF5FD00E7882E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7D65B51D3AF5FD00E7882E /* LaunchScreen.storyboard */; };
+		FD7D65BF1D3AF61000E7882E /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D65BE1D3AF61000E7882E /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD7D65B31D3AF5FD00E7882E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7D65B61D3AF5FD00E7882E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD7D65B81D3AF5FD00E7882E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7D65BE1D3AF61000E7882E /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Datos.swift; path = ../Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FD7D65AC1D3AF5FD00E7882E /* AppDelegate.swift */,
 				FD7D65AE1D3AF5FD00E7882E /* ViewController.swift */,
+				FD7D65BE1D3AF61000E7882E /* Datos.swift */,
 				FD7D65B01D3AF5FD00E7882E /* Main.storyboard */,
 				FD7D65B31D3AF5FD00E7882E /* Assets.xcassets */,
 				FD7D65B51D3AF5FD00E7882E /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				FD7D65AF1D3AF5FD00E7882E /* ViewController.swift in Sources */,
 				FD7D65AD1D3AF5FD00E7882E /* AppDelegate.swift in Sources */,
+				FD7D65BF1D3AF61000E7882E /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

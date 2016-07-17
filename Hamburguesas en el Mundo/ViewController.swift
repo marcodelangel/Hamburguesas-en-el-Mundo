@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var nombreDeHamburguesa: UILabel!
+    @IBOutlet weak var nombreDeCiudad: UILabel!
+    
+    let hamburguesas = ColeccionDeHamburguesas()
+    let ciudades = ColeccionDeCiudades()
+    let colores = ColeccionDeColores()
+
+    @IBAction func dameUnaHmaburguesa() {
+                
+        nombreDeHamburguesa.text = hamburguesas.obtenerHamburguesa()
+        nombreDeCiudad.text = ciudades.obtenerCiudad()
+        
+        let colorAleatorio = colores.obtenerColor()
+        view.backgroundColor = colorAleatorio
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
